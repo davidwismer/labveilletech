@@ -1,4 +1,9 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
+languageCode = 'fr'
 title = 'My New Hugo Site'
 theme = 'hugo-profile'
+
+[[menu.main]]
+name = "A propos"
+url = "#apropos"
+weight = 1
