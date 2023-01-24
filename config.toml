@@ -1,4 +1,4 @@
-baseURL = "https://davidwismer.github.io"
+baseURL = "https://davidwismer.github.io/labveilletech"
 title = "labveilletech"
 theme = "hugo-coder"
 languageCode = "fr"
