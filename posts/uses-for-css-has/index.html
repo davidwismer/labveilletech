@@ -1,0 +1,138 @@
+<!doctype html><html lang=fr>
+<head>
+<title>
+Résumé: More Real-World Uses for :has() · labveilletech
+</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=color-scheme content="light dark">
+<meta name=author content="David Wismer">
+<meta name=description content="Résumé d'un article qui parle des nouvelles possibilités apportées par :has() en CSS">
+<meta name=keywords content="blog,developer,personal">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Résumé: More Real-World Uses for :has()">
+<meta name=twitter:description content="Résumé d'un article qui parle des nouvelles possibilités apportées par :has() en CSS">
+<meta property="og:title" content="Résumé: More Real-World Uses for :has()">
+<meta property="og:description" content="Résumé d'un article qui parle des nouvelles possibilités apportées par :has() en CSS">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://davidwismer.github.io/labveilletech/posts/uses-for-css-has/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-01-27T02:35:59+01:00">
+<meta property="article:modified_time" content="2023-01-27T02:35:59+01:00">
+<link rel=canonical href=https://davidwismer.github.io/labveilletech/posts/uses-for-css-has/>
+<link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin>
+<link rel=stylesheet href=/labveilletech/css/coder.min.36f76aaf39a14ecf5c3a3c6250dcaf06c238b3d8365d17d646f95cb1874e852b.css integrity="sha256-NvdqrzmhTs9cOjxiUNyvBsI4s9g2XRfWRvlcsYdOhSs=" crossorigin=anonymous media=screen>
+<link rel=stylesheet href=/labveilletech/css/coder-dark.min.593028e7f7ac55c003b79c230d1cd411bb4ca53b31556c3abb7f027170e646e9.css integrity="sha256-WTAo5/esVcADt5wjDRzUEbtMpTsxVWw6u38CcXDmRuk=" crossorigin=anonymous media=screen>
+<link rel=icon type=image/png href=/labveilletech/images/favicon-32x32.png sizes=32x32>
+<link rel=icon type=image/png href=/labveilletech/images/favicon-16x16.png sizes=16x16>
+<link rel=apple-touch-icon href=/labveilletech/images/apple-touch-icon.png>
+<link rel=apple-touch-icon sizes=180x180 href=/labveilletech/images/apple-touch-icon.png>
+<link rel=manifest href=/labveilletech/site.webmanifest>
+<link rel=mask-icon href=/labveilletech/images/safari-pinned-tab.svg color=#5bbad5>
+<meta name=generator content="Hugo 0.91.2">
+</head>
+<body class="preload-transitions colorscheme-dark">
+<div class=float-container>
+<a id=dark-mode-toggle class=colorscheme-toggle>
+<i class="fa fa-adjust fa-fw" aria-hidden=true></i>
+</a>
+</div>
+<main class=wrapper>
+<nav class=navigation>
+<section class=container>
+<a class=navigation-title href=/labveilletech>
+labveilletech
+</a>
+<input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle>
+<i class="fa fa-bars fa-fw" aria-hidden=true></i>
+</label>
+<ul class=navigation-list>
+<li class=navigation-item>
+<a class=navigation-link href=/labveilletech/about/>A propos</a>
+</li>
+<li class=navigation-item>
+<a class=navigation-link href=/labveilletech/posts/>Articles</a>
+</li>
+</ul>
+</section>
+</nav>
+<div class=content>
+<section class="container post">
+<article>
+<header>
+<div class=post-title>
+<h1 class=title>
+<a class=title-link href=https://davidwismer.github.io/labveilletech/posts/uses-for-css-has/>
+Résumé: More Real-World Uses for :has()
+</a>
+</h1>
+</div>
+<div class=post-meta>
+<div class=date>
+<span class=posted-on>
+<i class="fa fa-calendar" aria-hidden=true></i>
+<time datetime=2023-01-27T02:35:59+01:00>
+janvier 27, 2023
+</time>
+</span>
+<span class=reading-time>
+<i class="fa fa-clock-o" aria-hidden=true></i>
+2 minutes de lecture
+</span>
+</div>
+<div class=authors>
+<i class="fa fa-user" aria-hidden=true></i>
+<a href=/labveilletech/authors/david-wismer/>David Wismer</a></div>
+</div>
+</header>
+<div class=post-content>
+<p>En 2022, les différents navigateurs web ont travaillé ensemble pour améliorer le web pour les développeurs, c&rsquo;est ce qu&rsquo;on a appelé &ldquo;Interop 2022&rdquo;. Durant ce processus, le langage CSS a eu le droit à de nouvelles fonctionnalités, dont une nouvelle pseudo-class &ldquo;:has()&rdquo; qui permet de cibler un élément qui possède un selecteur passé en paramètre dans sa portée. Au moment de la découverte de cet article, je n&rsquo;ai jamais entendu parlé de cette pseudo-class.</p>
+<h3 id=avantage>
+Avantage
+<a class=heading-link href=#avantage>
+<i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span>
+</a>
+</h3>
+<p>Dans cet article, l&rsquo;auteur nous fait part de différentes situations qu&rsquo;il imagine rencontrer où cette nouvelle pseudo-class pourrait simplifier le code. Elle pourrait être utile à certains moments où le CSS d&rsquo;avant cette fonctionnalité nous forçait à devoir passer par du Javascript pour assigner des styles à des éléments en dehors du composant qui va lancer un évènement. Le premier exemple est un menu de navigation qui, lors d&rsquo;un clic sur un élément du menu, va changer la couleur du header de la page. La pseudo-class has permet désormais de gérer cette situation uniquement en CSS:</p>
+<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-CSS data-lang=CSS><span style=font-weight:700>header</span>:has(.<span style=font-weight:700>menu--open</span>) {
+  <span style=font-style:italic>/* mettre un style au header différent si il contient un element avec la class &#34;.menu--open&#34; */</span>
+}
+</code></pre></div><h3 id=conclusion>
+Conclusion
+<a class=heading-link href=#conclusion>
+<i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span>
+</a>
+</h3>
+<p>Les différents langages de programmation que j&rsquo;utilise sont constament soumis à des changements. Il est important de se renseigner sur les nouveautés apportées pour rester le plus efficace possible.</p>
+<h3 id=sources>
+Sources
+<a class=heading-link href=#sources>
+<i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span>
+</a>
+</h3>
+<p>article: <a href=https://css-tricks.com/more-real-world-uses-for-has/>https://css-tricks.com/more-real-world-uses-for-has/</a><br>
+définition &ldquo;:has()": <a href=https://developer.mozilla.org/fr/docs/Web/CSS/:has>https://developer.mozilla.org/fr/docs/Web/CSS/:has</a><br>
+auteur: Liam Johnston</p>
+</div>
+<footer>
+</footer>
+</article>
+</section>
+</div>
+<footer class=footer>
+<section class=container>
+©
+2022 -
+2023
+David Wismer
+·
+Propulsé par <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.
+</section>
+</footer>
+</main>
+<script src=/labveilletech/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D+Uk="></script>
+</body>
+</html>
