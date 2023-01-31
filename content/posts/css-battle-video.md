@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2023-01-30T04:12:18+01:00
+date = 2023-01-25T04:12:18+01:00
 title = "Résumé: Can you beat me at a CSS Battle?"
 description = "Résumé d'une vidéo d'un web developpeur qui challenge à le battre à un jeu 'CSS battle'."
 slug = ""
