@@ -13,4 +13,4 @@ J'ai commencé à m'y intéresser durant ma formation d'Ingénieur des Médias �
 Les frameworks javascript auquels on m'a confronté lors des projets effectués m'ont beaucoup intéressés. Je pense notamment à Vue.js ou AngularJS, dont les possibilités d'utilisations me fascinent. Les aspects que je préfère dans le développement front-end sont certainement les sous-domaines des animations et des interractions. J'ai comme objectif de développer ma créativité et mes compétences techniques dans ces sous-domaines, afin de m'aider à suivre ma vocation de création de contenu unique, simple et utile.
 
 ### Sources
-ikigai: https://www.figma.com/file/YqzEhclHNYZPIzGuE56L41/Ikigai-Diagram-(Copy)?node-id=0%3A1&t=3AKpRe00rVGsLBxp-0
+Ikigai: https://www.figma.com/file/YqzEhclHNYZPIzGuE56L41/Ikigai-Diagram-(Copy)?node-id=0%3A1&t=3AKpRe00rVGsLBxp-0
