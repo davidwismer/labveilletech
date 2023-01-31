@@ -1,0 +1,140 @@
+<!doctype html><html lang=fr>
+<head>
+<title>
+Expérimentation: BadUIBattles · labveilletech
+</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=color-scheme content="light dark">
+<meta name=author content="David Wismer">
+<meta name=description content="Expérience avec le feed reddit 'badUIbattles', qui répertorie des interractions avec des mauvaises interfaces utilisateur.">
+<meta name=keywords content="blog,developer,personal">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Expérimentation: BadUIBattles">
+<meta name=twitter:description content="Expérience avec le feed reddit 'badUIbattles', qui répertorie des interractions avec des mauvaises interfaces utilisateur.">
+<meta property="og:title" content="Expérimentation: BadUIBattles">
+<meta property="og:description" content="Expérience avec le feed reddit 'badUIbattles', qui répertorie des interractions avec des mauvaises interfaces utilisateur.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://davidwismer.github.io/labveilletech/posts/experimentation-baduibattles/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-01-28T01:12:18+01:00">
+<meta property="article:modified_time" content="2023-01-28T01:12:18+01:00">
+<link rel=canonical href=https://davidwismer.github.io/labveilletech/posts/experimentation-baduibattles/>
+<link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin>
+<link rel=stylesheet href=/labveilletech/css/coder.min.36f76aaf39a14ecf5c3a3c6250dcaf06c238b3d8365d17d646f95cb1874e852b.css integrity="sha256-NvdqrzmhTs9cOjxiUNyvBsI4s9g2XRfWRvlcsYdOhSs=" crossorigin=anonymous media=screen>
+<link rel=stylesheet href=/labveilletech/css/coder-dark.min.593028e7f7ac55c003b79c230d1cd411bb4ca53b31556c3abb7f027170e646e9.css integrity="sha256-WTAo5/esVcADt5wjDRzUEbtMpTsxVWw6u38CcXDmRuk=" crossorigin=anonymous media=screen>
+<link rel=icon type=image/png href=/labveilletech/images/favicon-32x32.png sizes=32x32>
+<link rel=icon type=image/png href=/labveilletech/images/favicon-16x16.png sizes=16x16>
+<link rel=apple-touch-icon href=/labveilletech/images/apple-touch-icon.png>
+<link rel=apple-touch-icon sizes=180x180 href=/labveilletech/images/apple-touch-icon.png>
+<link rel=manifest href=/labveilletech/site.webmanifest>
+<link rel=mask-icon href=/labveilletech/images/safari-pinned-tab.svg color=#5bbad5>
+<meta name=generator content="Hugo 0.91.2">
+</head>
+<body class="preload-transitions colorscheme-dark">
+<div class=float-container>
+<a id=dark-mode-toggle class=colorscheme-toggle>
+<i class="fa fa-adjust fa-fw" aria-hidden=true></i>
+</a>
+</div>
+<main class=wrapper>
+<nav class=navigation>
+<section class=container>
+<a class=navigation-title href=/labveilletech>
+labveilletech
+</a>
+<input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle>
+<i class="fa fa-bars fa-fw" aria-hidden=true></i>
+</label>
+<ul class=navigation-list>
+<li class=navigation-item>
+<a class=navigation-link href=/labveilletech/about/>A propos</a>
+</li>
+<li class=navigation-item>
+<a class=navigation-link href=/labveilletech/posts/>Articles</a>
+</li>
+</ul>
+</section>
+</nav>
+<div class=content>
+<section class="container post">
+<article>
+<header>
+<div class=post-title>
+<h1 class=title>
+<a class=title-link href=https://davidwismer.github.io/labveilletech/posts/experimentation-baduibattles/>
+Expérimentation: BadUIBattles
+</a>
+</h1>
+</div>
+<div class=post-meta>
+<div class=date>
+<span class=posted-on>
+<i class="fa fa-calendar" aria-hidden=true></i>
+<time datetime=2023-01-28T01:12:18+01:00>
+janvier 28, 2023
+</time>
+</span>
+<span class=reading-time>
+<i class="fa fa-clock-o" aria-hidden=true></i>
+2 minutes de lecture
+</span>
+</div>
+<div class=authors>
+<i class="fa fa-user" aria-hidden=true></i>
+<a href=/labveilletech/authors/david-wismer/>David Wismer</a></div>
+</div>
+</header>
+<div class=post-content>
+<p>En discutant avec un ami à moi, j&rsquo;ai découvert un feed sur Reddit qui s&rsquo;appelle &ldquo;badUIbattles&rdquo;. Sur ce feed, les utilisateurs de Reddit postent toutes sortes de designs et interractions d&rsquo;interfaces utilisateurs qui sont intentionnellement mauvaises. Cela m&rsquo;a bien amusé et en me baladant dans le feed, j&rsquo;ai été inspiré par une idée d&rsquo;expérimentation.</p>
+<h3 id=expérience>
+Expérience
+<a class=heading-link href=#exp%c3%a9rience>
+<i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span>
+</a>
+</h3>
+<p>Actuellement entrain de développer un site qui me servira de portfolio, j&rsquo;essaie de trouver des idées d&rsquo;interractions intéressantes et uniques. Mon site contient une page de contact qui est constituée d&rsquo;un formulaire qu&rsquo;un visiteur peut remplir avec ses coordonnées et un message qui me seront envoyés à mon adresse mail. J&rsquo;ai donc pensé expérimenter avec l&rsquo;interraction du bouton d&rsquo;envoi de ce formulaire.</p>
+<p>L&rsquo;idée que j&rsquo;avais était un bouton qui, lorsque les informations entrées dans les champs du formulaire sont soit invalides soit manquantes, ne permet pas à l&rsquo;utilisateur de le cliquer et que ce soit visuellement amusant. J&rsquo;ai voulu faire en sorte que le bouton fuie la souris quand on veut cliquer dessus, jusqu&rsquo;à ce que les informations du formulaire soient correctes. Je me suis inspiré d&rsquo;un gif que j&rsquo;ai vu sur ce fameux feed &ldquo;badUIbattles&rdquo; où un &ldquo;Impossible Button&rdquo; était tout simplement incliquable par l&rsquo;utilisateur.</p>
+<h3 id=solution>
+Solution
+<a class=heading-link href=#solution>
+<i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span>
+</a>
+</h3>
+<p>Au vue de la disposition des éléments sur ma page, le plus intuitif était de faire coulisser le bouton horizontallement. Il fallait simplement qu&rsquo;au moment d&rsquo;un hover avec la souris sur ce bouton, l&rsquo;élément se translate sur l&rsquo;axe x. Le site étant mis en place sur Vue.js, j&rsquo;ai pu utiliser un v-bind, qui me permet de lier une variable à une propriété CSS. De là, il était simple d&rsquo;ajouter un bout de code Javascript qui me permet de donner une valeur de translation en pixel au bouton et d&rsquo;ajouter dans la classe CSS du bouton la variable dans une propriété:</p>
+<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-CSS data-lang=CSS>.<span style=font-weight:700>submit</span> {
+    <span style=font-weight:700>transform</span>: translate(v-bind(translation), 0);
+}
+</code></pre></div><p>Pour rendre l&rsquo;interraction plus &ldquo;naturel&rdquo; et moins monotone, j&rsquo;ai décidé d&rsquo;y ajouter un côté random. C&rsquo;est-à-dire que le bouton à 50% de chance d&rsquo;aller à gauche et 50% de chance de se d&rsquo;aller à droite. J&rsquo;ai tout de même pris des précautions pour que le bouton ne sorte pas de la page.</p>
+<p><img src=/labveilletech/images/experience.gif alt=image></p>
+<h3 id=sources>
+Sources
+<a class=heading-link href=#sources>
+<i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span>
+</a>
+</h3>
+<p>feed reddit: <a href=https://www.reddit.com/r/badUIbattles/>https://www.reddit.com/r/badUIbattles/</a><br>
+page contact avec l&rsquo;expérience: <a href=https://davidwismer.onrender.com/#contact>https://davidwismer.onrender.com/#contact</a></p>
+</div>
+<footer>
+</footer>
+</article>
+</section>
+</div>
+<footer class=footer>
+<section class=container>
+©
+2022 -
+2023
+David Wismer
+·
+Propulsé par <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.
+</section>
+</footer>
+</main>
+<script src=/labveilletech/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D+Uk="></script>
+</body>
+</html>
