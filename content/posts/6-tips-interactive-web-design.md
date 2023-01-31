@@ -17,5 +17,9 @@ L'article que je vais résumer ici s'intitule "6 top tips and ideas for interact
 ### Les points
 - Il est conseillé de bien utiliser les moments de chargement du site web. En effet, cela rend l'attente de l'utilisateur moins longue si on l'occupe avec des animations ou même des mini-jeux. En exemple, l'auteur nous montre un écran de chargement avec un bonhomme qui fait du skate, contrôlable par le clavier.
 
+https://user-images.githubusercontent.com/72078340/215821695-2ea63854-ce59-4ca8-821b-ddb854be4546.mp4
+
+
+
 ### Source
 article: https://en.99designs.ch/blog/web-digital/interactive-web-design/
