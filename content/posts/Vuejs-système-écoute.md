@@ -25,3 +25,6 @@ Il y'a même une section "Jobs", qui liste des offres d'emploi qui demandent des
 
 ### Pourquoi Vue.js ?
 J'ai décidé de suivre les news sur Vue.js, car c'est le framework avec lequel je suis le plus familier à l'heure actuelle et je me vois bien travailler avec cet outil dans un monde professionnel. J'aurai déjà l'occasion de l'utiliser lors de mon travail de bachelor. Je pense donc que de rester informer sur son évolution peut m'être bénéfique pour mon parcours professionnel.
+
+### Sources
+vue.js feed: https://vuejsfeed.com/
